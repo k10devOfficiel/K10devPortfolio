@@ -1,46 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="PORTFOLIO" content="portfolio du developpeur K10DEV developpeur application web">
+    <meta name="description" content="Portfolio de K10DEV, développeur d'applications web">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>K10DEV - Portfolio</title>
 </head>
 <body>
     <header>
-        <section>
+        <section class="navbar">
             <div class="logo">
-            <h3>K10 <span>DEV</span> </h3>
-        </div>
-        <div class="liste">
-            <ul>
-                 <a href=""><li>Accueil</li></a>   
-                 <a href=""><li>Competance</li></a>
-                <a href=""><li>Projet</li> </a>
-                <a href=""><li>Apropos</li></a>
-                <a href=""><li>Contact</li></a>
-            </ul>
-        </div>
-         </section>
-         <section class="baniere">
+                <h3>K10 <span>DEV</span></h3>
+            </div>
+
+            <div class="liste">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Compétences</a></li>
+                    <li><a href="">Projets</a></li>
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+
+        <section class="baniere">
             <div class="Presentation">
                 <h4>Hey je suis</h4>
                 <h1>K10 <span>DEV</span></h1>
-                <h3>Developpeur <span>Front-End</span></h3>
-                <p>je crée des interfaces  web moderne rapides et  responsives avec une experience utilisateur excellente</p>
+                <h3>Développeur <span>Front-End</span></h3>
+                <p>Je crée des interfaces web modernes, rapides et responsives, avec une expérience utilisateur excellente.</p>
                 <div class="lientprojet">
-                    <a href="" class="projet"> Voir mes projets<i class="fa-solid fa-arrow-right-long"></i></a>
-                     <a href="" class="contacter">Me contacter <i class="fa-solid fa-arrow-right-long"></i> </a>
+                    <a href="" class="projet">Voir mes projets <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="" class="contacter">Me contacter <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <div class="reseaux">
+                    <!-- LinkedIn -->
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <!-- WhatsApp -->
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <!-- Facebook -->
+                    <i class="fa-brands fa-facebook-f"></i>
                 </div>
             </div>
             <div class="Photo">
-                <img src="images/ChatGPT Image 15 juil. 2026, 01_34_10.png" alt="photo developeur">
+                <img src="images/ChatGPT Image 15 juil. 2026, 01_34_10.png" alt="Photo du développeur K10DEV">
+                <!-- Figma -->
+                <i class="fa-brands fa-figma"></i>
+                <!-- Landing page -->
+                <i class="fa-solid fa-laptop-code"></i>
+                <!-- Responsive -->
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <!-- Performance -->
+                <i class="fa-solid fa-gauge-high"></i>
             </div>
-         </section>
+        </section>
     </header>
-       
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

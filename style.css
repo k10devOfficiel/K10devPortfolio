@@ -108,6 +108,12 @@ header section{
    
    
 }
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
 header section .logo{
     font-weight: var(--fw-light);
     font-size:  var(--fs-xl);
@@ -143,19 +149,18 @@ a{
     grid-template-columns: repeat(2,1fr);
     width:  100%;
     height: auto;
-    padding: 50px;
     gap: 10px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .baniere .Presentation{
     display: block;
     line-height: 50px;
     text-align: start;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 header  .Photo img {
+    position: relative;
  height: 350px;
  width: 350px;
  border-radius: 20%;
@@ -189,7 +194,240 @@ span{
 }
 .lientprojet a {
     padding:  0 20px;
-    border: solid 1px black;
+    border: solid 1px var(--color-primary);
     border-radius: 60px;
 }
-g
+.lientprojet i{
+    color: var(--color-primary);
+}
+.lientprojet .projet{
+    background-color: var(--bg-dark);
+    color: var(--bg-main);
+}
+.lientprojet .projet:hover{
+    background-color: #fdfbd4;
+    color: var(--bg-dark);
+}
+.lientprojet .contacter:hover{
+    background-color: var(--color-dark);
+    color: var(--bg-main);
+}
+
+.reseaux{
+    display: flex;
+   gap: 40px;
+  padding: 20px;
+  margin: 20px ;
+}
+.reseaux i{
+    font-size: var(--fs-2xl);
+    padding: 10px  ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10%;
+
+}
+
+header .baniere .Photo .fa-figma {
+    position: absolute;
+    right: 50px;
+   font-size: var(--fs-4xl);
+   transform: rotate(20deg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+   padding: 10px;
+   border:  solid 1px var(--color-primary);
+   transition: 1s;
+}
+.Photo{
+    position: relative;
+}
+header .baniere .Photo  .fa-laptop-code{
+     position: absolute;
+    left: 50px;
+   font-size: var(--fs-4xl);
+   transform: rotate(-20deg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+   border:  solid 1px var(--color-primary);
+   padding: 5px 5px 5px 5px;
+   transition: 1s;
+}
+.baniere i:hover{
+    color: var(--color-primary);
+}
+
+
+header .baniere .Photo .fa-figma:hover{
+    transform: scale(1);
+    color: var(--color-primary);
+
+
+}
+header .baniere .Photo  .fa-laptop-code:hover{
+     transform: scale(1);
+    color: var(--color-primary);
+}
+header .baniere .Photo .fa-mobile-screen-button {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+   font-size: var(--fs-4xl);
+   transform: rotate(-20deg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+   padding: 10px;
+   border:  solid 1px var(--color-primary);
+   transition: 1s;
+}
+header .baniere .Photo  .fa-mobile-screen-button:hover{
+     transform: scale(1);
+    color: var(--color-primary);
+}
+header .baniere .Photo .fa-gauge-high {
+    position: absolute;
+      right: 50px;
+    bottom: 30px;
+   font-size: var(--fs-4xl);
+   transform: rotate(-20deg);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+   padding: 10px;
+   border:  solid 1px var(--color-primary);
+   transition: 1s;
+}
+header .baniere .Photo  .fa-gauge-high:hover{
+     transform: scale(1);
+    color: var(--color-primary);
+}
+ header  .logo i{
+    display: none;
+ }
+
+.no-scroll{
+    overflow: hidden;
+}
+
+/* ===== Responsive Tablette ===== */
+@media screen and (max-width: 900px) {
+    .baniere{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .baniere .Presentation{
+        margin-left: 0;
+        align-items: center;
+        order: 2;
+    }
+    .lientprojet{
+        justify-content: center;
+    }
+    .reseaux{
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .Photo{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .Presentation h1{
+        font-size: var(--fs-4xl);
+    }
+}
+
+/* ===== Responsive Mobile ===== */
+@media screen and (min-width: 576px){
+    #menu{
+    display: none;
+}
+}
+@media screen and (max-width: 576px) {
+
+    .navbar{
+        padding: 20px 6%;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu i{
+        display: block;
+        font-size: 2rem;
+        color: var(--color-primary);
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .liste{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: var(--bg-main);
+        transition: right .4s ease;
+        box-shadow: -10px 0 30px rgba(0,0,0,.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .liste.active{
+        right: 0;
+    }
+
+    .liste ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .Presentation h1{
+        font-size: var(--fs-3xl);
+    }
+    .Presentation h3{
+        font-size: var(--fs-xl);
+    }
+
+    header .baniere .Photo img{
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+    }
+
+    header .baniere .Photo i{
+        font-size: var(--fs-xl);
+        padding: 8px;
+    }
+
+    header .baniere .Photo .fa-figma{
+        right: 10px;
+    }
+    header .baniere .Photo .fa-laptop-code{
+        left: 10px;
+    }
+    header .baniere .Photo .fa-mobile-screen-button{
+        left: 10px;
+        bottom: 10px;
+    }
+    header .baniere .Photo .fa-gauge-high{
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .lientprojet{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .lientprojet a{
+        text-align: center;
+    }
+}
