@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+
+  /* ===== Couleurs principales ===== */
+
+  --color-primary: #F26B21;      /* Orange principal */
+  --color-primary-dark: #D95C1A; /* Orange foncé */
+  --color-primary-light: #FF8C42;/* Orange clair */
+
+  /* ===== Couleurs neutres ===== */
+
+  --color-black: #111111;
+  --color-dark: #1B1B1B;
+  --color-dark-2: #242424;
+  --color-gray-dark: #4D4D4D;
+  --color-gray: #7D7D7D;
+  --color-gray-light: #CFCFCF;
+  --color-light: #F5F5F5;
+  --color-white: #FFFFFF;
+
+  /* ===== Background ===== */
+
+  --bg-main: #FFFFFF;
+  --bg-section: #F8F8F8;
+  --bg-dark: #111111;
+  --bg-card: #1B1B1B;
+
+  /* ===== Texte ===== */
+
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-light: #888888;
+  --text-white: #FFFFFF;
+
+  /* ===== Bordures ===== */
+
+  --border-light: #E8E8E8;
+  --border-dark: #2F2F2F;
+
+  /* ===== Ombres ===== */
+
+  --shadow-sm: 0 4px 10px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,.12);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,.18);
+
+  /* ===== Boutons ===== */
+
+  --btn-bg: var(--color-primary);
+  --btn-hover: var(--color-primary-dark);
+  --btn-text: #FFFFFF;
+   /* ===== Font Family ===== */
+
+    --font-primary: 'Poppins', sans-serif;
+
+    /* ===== Font Weight ===== */
+
+    --fw-light:300;
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semibold:600;
+    --fw-bold:700;
+    --fw-extrabold:800;
+
+    /* ===== Font Size ===== */
+
+    --fs-xs:0.75rem;      /* 12px */
+    --fs-sm:0.875rem;     /* 14px */
+    --fs-base:1rem;       /* 16px */
+    --fs-md:1.125rem;     /* 18px */
+    --fs-lg:1.25rem;      /* 20px */
+    --fs-xl:1.5rem;       /* 24px */
+    --fs-2xl:2rem;        /* 32px */
+    --fs-3xl:2.5rem;      /* 40px */
+    --fs-4xl:3rem;        /* 48px */
+    --fs-5xl:5rem;        /* 64px */
+
+    /* ===== Line Height ===== */
+
+    --lh-sm:1.2;
+    --lh-md:1.5;
+    --lh-lg:1.8;
+
+    /* ===== Letter Spacing ===== */
+
+    --ls-sm:0.5px;
+    --ls-md:1px;
+    --ls-lg:2px;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+      background: #fdfbd4;
+}
+header section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: var(   --fs-xs);
+    text-decoration: none;
+   
+   
+}
+header section .logo{
+    font-weight: var(--fw-light);
+    font-size:  var(--fs-xl);
+}
+
+header section .liste ul  {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+li{
+     list-style: none;
+     color: var(--bg-dark);
+     font-size: 15px;
+     font-weight: var(--fw-regular);
+}
+a{
+    text-decoration: none;
+   color: var(--bg-dark);
+}
+ header .liste a :hover{
+    text-decoration: underline;
+    color: var(--color-primary);
+    text-transform: lowercase;
+
+}
+/* style de la  section bniere  */
+.baniere{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
+    width:  100%;
+    height: auto;
+    padding: 50px;
+    gap: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.baniere .Presentation{
+    display: block;
+    line-height: 50px;
+    text-align: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header  .Photo img {
+ height: 350px;
+ width: 350px;
+ border-radius: 20%;
+
+
+
+}
+span{
+    color: var(--color-primary);
+}
+.Presentation h1{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-5xl);
+
+}.Presentation h4{
+    font-weight: var(--fw-bold);
+   
+
+}.Presentation h3{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-3xl);
+
+}
+.Presentation p{
+    font-size: var(--fs-xs);
+
+}
+.lientprojet{
+    display: flex;
+    gap: 20px;
+}
+.lientprojet a {
+    padding:  0 20px;
+    border: solid 1px black;
+    border-radius: 60px;
+}
+g
